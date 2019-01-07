@@ -4,20 +4,33 @@
     <title>Memory</title>
   </head>
   <body>
+    <div class="container">
 
-    <form id="difficulty">
-      <div class="form-group">
-        <input class="form-control" type="number" id="input">
+      <div class="row">
+
+        <div class="col-md-4 offset-md-4">
+          <div class="jumbotron">
+            <h3>SIMON</h3>
+          </div>
+          <form id="difficulty">
+            <div class="form-group">
+              <input class="form-control" type="number" id="input">
+            </div>
+            <button class="btn btn-primary" type="submit">Start Game</button>
+          </form>
+
+          <form id="cardForm">
+
+            <ul id='output'>
+
+            </ul>
+          </form>
+
+        </div>
+
       </div>
-      <button class="btn btn-primary" type="submit">Start Game</button>
-    </form>
 
-    <form id="cardForm">
-
-    <ul id='output'>
-
-    </ul>
-  </form>
+    </div>
 
   </body>
 </html>
