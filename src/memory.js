@@ -1,7 +1,7 @@
 import { Card } from './card';
 
 export function Memory() {
-  this.difficulty = 1;
+  this.difficulty = 10;
 }
 
 Memory.prototype.message = function() {
@@ -15,7 +15,7 @@ Memory.prototype.setDifficulty = function (diff) {
 Memory.prototype.render = function() {
   var cardNumbers = [];
   for (var i = 0; i < this.difficulty; i++) {
-    cardNumbers.push(Math.random(this.difficulty));
+    cardNumbers.push(Math.floor(Math.random() * Math.floor(100)));
   }
 
   var cardNumbers2 = cardNumbers;
