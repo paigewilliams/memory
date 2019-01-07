@@ -6,6 +6,6 @@ export function Card(value) {
 }
 
 Card.prototype.render = function () {
-  var output = '<li><div class="card"><div id="' + this.value + '" class="card-body">Card Number: ' + this.value + '</div></div></li>';
+  var output = '<li class="' + this.value + '"><div class="card"><h4 class="card-title">Card</h4><p class="card-body">Card Number: ' + this.value + '</p><input class="form-check-input" type="checkbox" value="' + this.value + '"></div></div></li>';
   return output;
 };

@@ -35,13 +35,10 @@ Memory.prototype.render = function() {
 
   var cardNumbers2 = cardNumbers.map(x => x * 1);
   var output = "";
-  debugger;
+  
   cardNumbers.shuffle();
-  console.log("cards1");
-  console.log(cardNumbers);
   cardNumbers2.shuffle();
-  console.log("cards2");
-  console.log(cardNumbers2);
+
 
   while (cardNumbers.length > 0){
     output += new Card(cardNumbers.pop()).render();
