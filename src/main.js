@@ -41,6 +41,9 @@ $(document).ready(function() {
     else if (checked.length === 0) {
       $(this).next().slideUp();
     }
+    else if (checked.length > 2) {
+      $(this).next().slideUp();
+    }
 
   });
 
