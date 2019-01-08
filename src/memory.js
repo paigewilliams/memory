@@ -13,7 +13,7 @@ Array.prototype.shuffle = function() {
     input[i] = itemAtIndex;
   }
   return input;
-}
+};
 
 export function Memory() {
   this.difficulty = 10;
@@ -35,7 +35,7 @@ Memory.prototype.render = function() {
 
   var cardNumbers2 = cardNumbers.map(x => x * 1);
   var output = "";
-  
+
   cardNumbers.shuffle();
   cardNumbers2.shuffle();
 

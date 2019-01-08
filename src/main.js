@@ -9,7 +9,6 @@ $(document).ready(function() {
 
 
   $("#difficulty").submit(function(event) {
-    console.log("testing");
     event.preventDefault();
     var gameDifficulty = $('#input').val();
     game.setDifficulty(gameDifficulty);
@@ -26,7 +25,7 @@ $(document).ready(function() {
     $("input[type='checkbox']:checked").each(function(){
       checked.push($(this).val());
     });
-    console.log(checked);
+
     if ((checked.length === 2) && (checked[0] == checked[1])){
       $("." + checked[0]).remove();
     }
@@ -38,9 +37,8 @@ $(document).ready(function() {
 
       checkbox1.prop('checked', !checkbox.prop('checked'));
       checkbox2.prop('checked', !checkbox.prop('checked'));
-
     }
-     else if (checked.length === 0) {
+    else if (checked.length === 0) {
       $(this).next().slideUp();
     }
 
